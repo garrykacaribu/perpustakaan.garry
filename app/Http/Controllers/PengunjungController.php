@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Buku;
 use Illuminate\Support\Facades\DB;
 
-class PengunjungController
+class PengunjungController extends Controller
 {
     /**
      * Display a listing of the resource.
