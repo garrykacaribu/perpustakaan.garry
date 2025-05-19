@@ -13,7 +13,7 @@ class PengunjungController extends Controller
      */
     public function index()
     {
-        $buku = buku::all();
+        $buku = Buku::all();
         return view('buku.pengunjung', compact('buku'));
     }
 
