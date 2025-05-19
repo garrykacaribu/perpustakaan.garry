@@ -11,11 +11,11 @@ class PengunjungController extends Controller
     /**
      * Display a listing of the resource.
      */
-    // public function index()
-    // {
-    //     $buku = buku::all();
-    //     return view('buku.pengunjung', compact('buku'));
-    // }
+    public function index()
+    {
+        $buku = buku::all();
+        return view('buku.pengunjung', compact('buku'));
+    }
 
     /**
      * Show the form for creating a new resource.
