@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use App\Models\Peminjaman;
+
+class Pengembalian extends Model
+{
+    protected $fillable = [
+        'peminjaman_id',
+        'tanggal_pengembalian',
+        'denda',
+    ];
+
+    // Relasi ke peminjaman
+    public function peminjaman()
+    {
+        return $this->belongsTo(Peminjaman::class);
+    }
+
+
+
+}
